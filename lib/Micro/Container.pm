@@ -3,7 +3,7 @@ package Micro::Container;
 use strict;
 use warnings;
 use 5.008_001;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use parent qw(Class::Data::Inheritable);
 
@@ -167,7 +167,7 @@ Micro::Container is inheritable object container.
 Returns instance.
 
   package MyContainer;
-  parent 'Micro::Container';
+  use parent 'Micro::Container';
 
   package main;
   use MyContainer;
@@ -181,7 +181,7 @@ Returns instance.
 Register objects to container.
 
   package MyContainer;
-  parent 'Micro::Container';
+  use parent 'Micro::Container';
 
   __PACKAGE__->register(
       'LWP::UserAgent' => [ agent => 'FooBar' ],
