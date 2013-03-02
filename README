@@ -44,7 +44,7 @@ METHODS
       my $container = MyContainer->instance;
 
   register(%args)
-=head2 add(%args)
+  add(%args)
     Register objects to container.
 
       package MyContainer;
@@ -59,7 +59,7 @@ METHODS
       );
 
   unregister(@names)
-=head2 remove(@names)
+  remove(@names)
     Remove registered objects by name.
 
       MyContainer->unregister('JSON', 'LWP::UserAgent');

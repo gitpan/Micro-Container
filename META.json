@@ -41,7 +41,7 @@
    "provides" : {
       "Micro::Container" : {
          "file" : "lib/Micro/Container.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -56,5 +56,5 @@
          "url" : "https://github.com/xaicron/p5-Micro-Container"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
